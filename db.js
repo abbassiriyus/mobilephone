@@ -1,11 +1,11 @@
 const { Pool } = require("pg")
 const pool = new Pool({
-    DATABASE_URL:'postgresql://postgres:CSJEzh076WnEPqB8aL8v@containers-us-west-54.railway.app:5620/railway',
-    PGDATABASE:"railway",
-    PGHOST:'containers-us-west-54.railway.app',
-    PGPASSWORD:'CSJEzh076WnEPqB8aL8v',
-    PGPORT:5620,
-    PGUSER:'postgres'
+    user: 'postgres',
+    password: "CSJEzh076WnEPqB8aL8v",
+    host: "containers-us-west-54.railway.app",
+    port: 5620,
+    database: "railway"
+
 })
 
 // const pool = new Pool({
